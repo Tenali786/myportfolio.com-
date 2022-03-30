@@ -105,6 +105,7 @@ nav{
 .name ol ol li{
 
     color: lime;
+
 }
 
 .name ol ol li i{
@@ -129,6 +130,11 @@ nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     outline: none;
+    
+}
+
+nav ul ul li{
+    border: 1px solid rgb(107, 85, 85);
 }
 
 nav ul li a:hover{
@@ -312,6 +318,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .content img{
