@@ -367,6 +367,14 @@ span{
     text-align: center;
 }
 
+@media screen and (max-width:950px){
+    .images img{
+        width: 400px;
+        height:400px;
+    }
+        
+}
+
 @media screen and (max-width:780px){
     .images img{
         width: 350px;
@@ -378,3 +386,4 @@ span{
     }
     
 }
+
