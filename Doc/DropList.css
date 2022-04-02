@@ -8,7 +8,9 @@ nav ul{
 }
 
 nav ul li{
-    background-color: rgb(33, 82, 53);
+    /* background-color: rgb(33, 82, 53); */
+    background-color: rgb(51, 122, 80);
+
     position: relative;
     list-style: none;
     display: inline-block;
@@ -24,13 +26,14 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: #243342;
+    background-color: #3a5066;
 }
 
 
 nav ul ul {
     position: absolute;
     top: 22px;
+    right: -30px;
     display: none;
 }
 
@@ -59,3 +62,72 @@ nav ul ul ul li{
     
 }
 
+
+
+@media screen and (max-width:580px) {
+   
+
+    nav ul{
+        display:block;
+        position: absolute;
+        top: 23px;
+        right: -20px;
+        display: none;
+    }
+   
+
+    nav ul li{
+        color: red;
+        display: flex;
+        padding: 5px 8px;
+        border: 1px solid rgb(145, 145, 79);
+        
+    }
+
+     nav ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        outline: none;
+    }
+    
+
+    nav ul li a:hover{
+        background-color: rgb(72, 141, 112);
+        color: white;
+    }
+
+        
+    nav ul ul {
+        position: absolute;
+        top:25px;
+        right:50px;
+        display: none;
+    }
+
+    nav ul li:hover > ul{
+        display: block;
+    }
+
+    nav ul ul li{
+        width: fit-content;
+        float: none;
+        display: list-item;
+        position: relative;
+        width: 200px;
+        line-height:30px;
+
+    }
+
+    nav ul ul li a{
+        text-decoration: none;
+    }
+
+    nav ul ul ul{
+        top: 185px;
+    }
+    nav ul ul ul li{
+        position:relative;
+        left: 50px;
+        top: -20px;   
+    }
+}

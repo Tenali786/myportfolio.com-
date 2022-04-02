@@ -24,8 +24,9 @@ nav{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(33, 82, 53);
     position: sticky;
+    background-color: rgb(51, 122, 80);
+
 }
 
 .logo{
@@ -105,7 +106,6 @@ nav{
 .name ol ol li{
 
     color: lime;
-
 }
 
 .name ol ol li i{
@@ -130,11 +130,6 @@ nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     outline: none;
-    
-}
-
-nav ul ul li{
-    border: 1px solid rgb(143, 142, 93);
 }
 
 nav ul li a:hover{
@@ -151,7 +146,6 @@ nav ul li a:hover{
     align-items: center;
     flex-wrap: wrap;
     border-radius: 6px;
-    background-color: rgb(32, 86, 167);
     padding: 2px;
     /* border: 2px solid white; */
 }
@@ -161,15 +155,26 @@ nav ul li a:hover{
 }
 
 
+.menubtn{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.menubtn:hover{
+    color: lime;
+}
+
+
 .search{
     width:250px;
     height: 25px;
-    color: rgb(65, 74, 207);
     font-size: 17px;
     text-align: center;
     border: white;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    border-radius: 5px;
     outline: none;
 }
 
@@ -188,17 +193,20 @@ nav ul li a:hover{
     padding: 2px 10px;
     background-color: transparent;
     color: rgb(255, 255, 255);
-    /* border: 2px solid rgb(168, 168, 29); */
-    /* border-radius: 6px; */
     border: none;
     cursor: pointer;
-    /* width: 90px; */
     font-size: 15px;
+    background-color: rgb(87, 190, 121);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .searchnow button:hover{
-    color: lime;
+    background-color: rgb(65, 180, 103);
+
 }
+
 
 
 .main_box{
@@ -267,8 +275,8 @@ span{
 .images img{
     transform: translateX(-50%);
     transition: bottom 0.50s,top 0.50s;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -280,6 +288,10 @@ span{
 }
 .images:hover .boy{
     top: 55%;
+}
+
+.images:hover nav{
+    background-color: red;
 }
 
 
@@ -318,7 +330,6 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 5px;
-    border-radius: 5px;
 }
 
 .content img{
@@ -378,6 +389,7 @@ span{
     .images img{
         width: 400px;
         height:400px;
+        margin: auto;
     }
         
 }
@@ -387,10 +399,28 @@ span{
         width: 350px;
         height: 350px;
     }
-    
     .box{
         margin: 100px 50px;
     }
     
 }
 
+@media screen and (max-width:580px) {
+   
+    .images img{
+        width: 250px;
+        height: 250px;
+    }
+    .menubtn {
+        display: block;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:300px) {
+   .details {
+       margin-left: 120px;
+   }
+}
