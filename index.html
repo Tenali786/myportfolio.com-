@@ -75,7 +75,7 @@
             <input type="search btn" name="" id="searchbox" class="search" placeholder="Search portfolio !!👌">
             <button class="btn">Search</button>
         </div>
-        <a class="menubtn" onclick="showMenu()"> <i class="material-icons">menu</i> </a>
+        <a class="menubtn" id="show" onclick="showMenu()"> <i class="material-icons">menu</i> </a>
     </nav>
     <div class="main_contener">
 
@@ -198,6 +198,7 @@
             if (value == 0) {
                 show.style.display = "block";
                 value = 1;
+                document.getElementById('show').style.color= 'white';
 
             }
             else {
