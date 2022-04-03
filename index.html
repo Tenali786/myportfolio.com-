@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="Doc/style.css">
     <link rel="stylesheet" href="Doc/DropList.css">
+    <!-- <link rel="stylesheet" href="Doc/css.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="Img/13.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,21 +24,12 @@
 </head>
 
 <body>
+
     <nav>
-        <div class="name">
+        <div class="name"
+            onclick="document.getElementById('closenow').style.left= '0px';document.getElementById('closenow').style.transition= 'left 0.3s';document.getElementById('closenow').style.display= 'block';">
             <img src="Img/logo.png" alt="MyPortFolio.com" class="logo">
             <p>TR</p>
-            <ol>
-                <li> <a href="#">PortFolio</a>
-                    <ol>
-                        <li><i class="material-icons">upload</i><a href="#">upload</a></li>
-                        <li><i class="material-icons">delete</i><a href="#">Delete</a></li>
-                        <li><i class="material-icons">edit</i><a href="#">Upadate</a></li>
-
-                    </ol>
-                </li>
-                <li> <a href="#">Profile </a></li>
-            </ol>
         </div>
 
         <ul id="nav">
@@ -46,7 +38,7 @@
 
             <li><a href="#">Students</a>
                 <ul>
-                    <li><a href="#">HTML Language</a>
+                    <li class="fa fa-plus"> <a href="#">HTML Language</a>
                         <ul>
                             <li><a>HTML Practical File</a></li>
                             <li><a download="Doc/HTML_CSS_JAVASCRIPT.rar"
@@ -76,7 +68,42 @@
             <button class="btn">Search</button>
         </div>
         <a class="menubtn" onclick="showMenu()"> <i class="material-icons">menu</i> </a>
+
     </nav>
+
+    <div class="account" id="closenow">
+        <button class="closebtn" onclick="document.getElementById('closenow').style.left= '-300px'"><i
+                class="material-icons">close</i></button>
+        <div class="logo2">
+            <img src="Img/logo.png" alt="MyPortFolio.com" class="logo">
+            <h1>TR</h1>
+
+            <ul>
+                <li> <i class="material-icons">person</i> User Account
+
+                    <ul>
+                        <li> <i class="material-icons">visibility</i> View Profile</li>
+                        <li> <i class="material-icons">edit</i> Edit Profile</li>
+                        <li> <i class="material-icons">delete</i> Delete Accoutn</li>
+                    </ul>
+
+
+                </li>
+                <li> <i class="material-icons">airplay</i> Portfolio
+
+                    <ul>
+                        <li> <i class="material-icons">edit</i> Update Portfolio</li>
+                        <li> <i class="material-icons">add</i> Add Portfolio</li>
+                        <li> <i class="material-icons">delete</i> Delete Portfolio</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
     <div class="main_contener">
 
 
@@ -189,8 +216,6 @@
         <p> @ copyright Lorem monu saini consectetur adipisicing elit. Ex, a?</p>
     </div>
 
-
-
     <script>
         let value = 0;
         function showMenu() {
@@ -205,8 +230,6 @@
                 value = 0;
             }
         }
-
-
     </script>
 
 </body>

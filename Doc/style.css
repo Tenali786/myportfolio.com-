@@ -56,63 +56,6 @@ nav{
 
 }
 
-.name ol{
-    padding: 0;
-    margin: 0;
-    float: right;
-    margin-right:-30px;
-    position: relative;
-    display: none;    
-}
-.name:hover ol{
-    display: block;
-}
-
-.name ol li:hover > ol{
-    display: block;
-}
-
-.name ol ol li{
-    width: fit-content;
-    float: none;
-    display: list-item;
-    position: relative;
-    width: 200px;
-    line-height:30px;
-
-}
-.name ol li{
-
-    background-color: #43668a;
-    list-style: none;
-}
-.name ol li a{
-    text-decoration: none;
-    display: block;
-    padding: 0 10px;
-    color:white;
-    font-size: 20px;
-}
-
-
-.name ol li:hover{
-    background-color: #243342;
-}
-
-.name ol ol li{
-    width: 100px;
-    display: flex;
-}
-.name ol ol li{
-
-    color: lime;
-}
-
-.name ol ol li i{
-    cursor: pointer;
-}
-
-
 
 nav ul{
     display: flex;
@@ -384,6 +327,114 @@ span{
     color: white;
     text-align: center;
 }
+
+
+.account{
+    width: 210px;
+    height: 100%;
+    background-color:rgba(18, 32, 26);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-right:2px solid cyan;
+    transition: left 0.7s;
+    display: none;
+    overflow: hidden;
+}
+
+
+.closebtn{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.closebtn:hover{
+    transform: scale(1.089);
+}
+
+.account h1{
+    color: white;
+    width: 100%;
+    text-align:center;
+    font-size: 50px;
+    margin-left: 30px;
+    font-family: 'Hurricane', cursive;
+
+
+}
+.logo2{
+    position: relative;
+    border: 2px solid rgb(236, 234, 234);
+    border-radius: 50%;
+    background-color: #5c4c4c;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin: 5px;
+
+}
+
+.account ul{
+    position: relative;
+    left: -157px;
+    top: 90px;
+}
+.account ul li{
+    /* background-color: #3f8542; */
+    width:205px;
+    list-style: none;
+    display:block;
+    color: rgb(131, 172, 233);
+    font-size: 25px;
+    margin: 5px;
+    border-top: 1px solid rgb(36, 170, 47);
+    overflow: hidden;
+    text-decoration:dotted;
+    cursor:default;
+
+}
+.account ul li i{
+    color: rgb(0, 255, 13);
+    margin: 5px;
+}
+.account ul ul{
+    /* display: none; */
+
+    position: relative;
+    left: 15px;
+    top: 0px;
+}
+
+.account ul ul li{
+    border: none;
+    list-style: disc;
+    cursor: pointer;
+    color: rgb(165, 158, 158);
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.account ul ul li i{
+    color: white;
+}
+
+.account ul ul li:hover{
+    background-color:white;
+    color: rgb(21, 3, 182);
+}
+
+.account ul ul li:hover >i{
+    color: rgb(21, 3, 182);
+}
+
+
 
 @media screen and (max-width:950px){
     .images img{
