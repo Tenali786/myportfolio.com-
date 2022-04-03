@@ -67,69 +67,64 @@ nav ul ul ul li{
 
 
 @media screen and (max-width:580px) {
-   
-
-    nav ul{
-        display:block;
-        position: absolute;
-        top: 23px;
-        right: -20px;
+    nav ul {
         display: none;
-    }
-   
-
-    nav ul li{
-        color: red;
-        display: flex;
-        padding: 5px 8px;
-        border: 1px solid rgb(145, 145, 79);
-        
-    }
-
-     nav ul li a{
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        outline: none;
-    }
-    
-
-    nav ul li a:hover{
-        background-color: rgb(72, 141, 112);
-        color: white;
-    }
-
-        
-    nav ul ul {
-        position: absolute;
-        top:25px;
-        right:50px;
-        display: none;
-    }
-
-    nav ul li:hover > ul{
-        display: block;
-    }
-
-    nav ul ul li{
-        width: fit-content;
-        float: none;
-        display: list-item;
-        position: relative;
-        width: 200px;
-        line-height:30px;
-
-    }
-
-    nav ul ul li a{
-        text-decoration: none;
-    }
-
-    nav ul ul ul{
-        top: 185px;
-    }
-    nav ul ul ul li{
-        position:relative;
-        left: 50px;
-        top: -20px;   
     }
 }
+    .moblist ul{
+        position: relative;
+        left: 0px;
+        top: 20px;
+        overflow: hidden;
+    }
+
+    .moblist ul li{
+        width: 100%;
+        color: white;
+        list-style: none;
+        font-size: 33px;
+        text-align:left;
+        margin: 5px;
+        font-family: 'Inconsolata', monospace;
+        padding: 5px 5px;
+        border-bottom: 2px solid rgb(95, 80, 80);
+
+    }
+    
+    .moblist ul li a{
+        color: aqua;
+        text-decoration: none;
+    }
+    .moblist ul ul {
+        position: relative;
+        left: 30px;
+        top: 0px;
+        display: none;
+    }
+    .moblist ul ul li{
+        font-size: 30px;
+        padding: 5px 5px;
+    }
+    .moblist ul ul li a{
+
+        color: rgb(135, 211, 12);
+    }
+    .moblist ul ul li:hover >ul{
+        background-color: transparent;
+    }
+    .moblist ul ul ul li{
+        font-size: 25px;
+        padding: 5px 5px;
+    }
+    .moblist ul ul ul li a{
+        color: rgb(13, 179, 221);
+        font-weight: bold;
+    }
+    .moblist ul ul ul li:hover{
+        background-color: #458bd1;
+    }
+    .moblist ul li:hover >ul{
+        display: block;
+    }
+    
+/* } */

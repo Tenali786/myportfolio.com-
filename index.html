@@ -64,15 +64,11 @@
 
         </ul>
         <div class="searchnow">
-            <input type="search" name="" id="searchbox" class="search" placeholder="Search portfolio !!👌">
+            <input type="search btn" name="" id="searchbox" class="search" placeholder="Search portfolio !!👌">
             <button class="btn">Search</button>
         </div>
-<<<<<<< HEAD
         <a class="menubtn" onclick="showMenu()"> <i class="material-icons">menu</i> </a>
 
-=======
-        <a class="menubtn" id="show" onclick="showMenu()"> <i class="material-icons">menu</i> </a>
->>>>>>> 7b89030724216e068140b2047ef0e1c346961ddb
     </nav>
 
     <div class="account" id="closenow">
@@ -107,6 +103,13 @@
         </div>
 
     </div>
+
+    <div class="moblist" id="mob">
+        <button class="closelist" onclick="CloseList()"><i
+            class="material-icons">close</i></button>
+
+    </div>
+
 
     <div class="main_contener">
 
@@ -220,25 +223,7 @@
         <p> @ copyright Lorem monu saini consectetur adipisicing elit. Ex, a?</p>
     </div>
 
-    <script>
-        let value = 0;
-        function showMenu() {
-            let show = document.getElementById('nav');
-            if (value == 0) {
-                show.style.display = "block";
-                value = 1;
-                
-                document.getElementById('show').style.color= 'lime';
-
-            }
-            else {
-                show.style.display = 'none';
-                value = 0;
-                document.getElementById('show').style.color= 'white';
-
-            }
-        }
-    </script>
+    <script src="Doc/functions.js"></script>
 
 </body>
 
