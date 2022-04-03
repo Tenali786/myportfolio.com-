@@ -10,9 +10,13 @@ function showMenu() {
         list.style.display= 'block';
         list.style.right= '0px';
         list.appendChild(show);        
+        list.style.display = 'block';
+
     }
 }
 
 function CloseList(){
-    document.getElementById('mob').style.right = '-450px';
+    list.style.right = '-450px';
+    list.style.display = 'none';
+
 }
