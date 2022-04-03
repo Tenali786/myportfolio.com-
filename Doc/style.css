@@ -104,7 +104,7 @@ nav ul li a:hover{
     right: 10px;
     color: white;
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
 .menubtn:hover{
     color: lime;
@@ -340,6 +340,8 @@ span{
     transition: left 0.7s;
     display: none;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -368,6 +370,7 @@ span{
 }
 .logo2{
     position: relative;
+    
     border: 2px solid rgb(236, 234, 234);
     border-radius: 50%;
     background-color: #5c4c4c;
@@ -376,6 +379,10 @@ span{
     display: flex;
     margin: 5px;
 
+}
+.logo2 img{
+    /* position: absolute; */
+    margin-left:3px;
 }
 
 .account ul{
@@ -436,9 +443,11 @@ span{
 
 
 .moblist{
-    width: 370px;
+    width:max-content;
     height:max-content;
-    background-color: #1e522b;
+    /* background-color: #1e522b; */
+    background-color:rgba(18, 32, 26);
+
     position: absolute;
     top: 3px;
     right: 0px;
