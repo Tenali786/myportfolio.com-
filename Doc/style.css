@@ -184,6 +184,7 @@ span{
     color: rgb(160, 156, 156);
     line-height: 22px;
     font-size: 18px;
+    
 }
 
 .details a{
@@ -507,6 +508,13 @@ span{
     .box{
         margin: 100px 50px;
     }
+    .details h1{
+        font-size: 40px;
+    }
+    .details{
+        margin-left:-5px;
+    }
+   
     
 }
 
@@ -518,6 +526,9 @@ span{
     }
     .menubtn {
         display: block;
+    }
+    .details{
+        margin-left:5px;
     }
     
     
