@@ -71,7 +71,7 @@ nav ul ul ul li{
 
 
 
-
+/* 680 */
 @media screen and (max-width:680px) {
     nav ul {
         display: none;
@@ -91,7 +91,7 @@ nav ul ul ul li{
         width: 100%;
         color: white;
         list-style: none;
-        font-size: 30px;
+        font-size: 20px;
         text-align:left;
         margin: 5px;
         font-family: 'Inconsolata', monospace;
@@ -100,10 +100,21 @@ nav ul ul ul li{
         cursor: pointer;
 
     }
+    .moblist ul li:focus-within{
+        color: red;
+        background-color:transparent;
+    }
     
     .moblist ul li a{
-        color: aqua;
+        color: white;
+        display: flex;
+        justify-content:left;
+        align-items: center;
         text-decoration: none;
+    }
+    .moblist ul li a i{
+        color: rgb(111, 219, 233);
+        margin-right:3px;
     }
     .moblist ul ul {
         position: relative;
@@ -112,7 +123,7 @@ nav ul ul ul li{
         display: none;
     }
     .moblist ul ul li{
-        font-size: 26px;
+        font-size:17px;
         padding: 5px 5px;
         border:none;
         cursor: pointer;
@@ -121,15 +132,27 @@ nav ul ul ul li{
     }
     .moblist ul ul li a{
 
-        color: rgb(135, 211, 12);
+        color: rgb(255, 255, 255);
+    }
+    #portfolio ul li:hover{
+        background-color: white;
+        color: blue;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 0 0 5px white,
+    0 0 8px rgb(44, 99, 219);
     }
     .moblist ul ul li:hover >ul{
         background-color: transparent;
     }
     .moblist ul ul ul li{
-        font-size: 25px;
+        font-size:15px;
         padding: 5px 5px;
         cursor: pointer;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        
+
 
     }
     .moblist ul ul ul li a{
@@ -141,6 +164,8 @@ nav ul ul ul li{
     }
     .moblist ul ul ul li:hover{
         background-color:white;
+        box-shadow: 0 0 5px white,
+    0 0 8px rgb(44, 99, 219);
     }
     .moblist ul li:hover >ul{
         display: block;

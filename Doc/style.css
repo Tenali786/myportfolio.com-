@@ -212,6 +212,7 @@ span{
     justify-content: center;
     align-items: center;
     position: relative;
+    /* border: 2px solid blue; */
 }
 
 
@@ -342,6 +343,9 @@ span{
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px rgb(130, 201, 206),
+    0 0 15px rgb(0, 0, 0), 
+    0 0 20px rgb(3, 228, 33);
 }
 
 
@@ -435,6 +439,8 @@ span{
 .account ul ul li:hover{
     background-color:white;
     color: rgb(21, 3, 182);
+    box-shadow: 0 0 5px white,
+    0 0 8px rgb(44, 99, 219);
 }
 
 .account ul ul li:hover >i{
@@ -443,18 +449,20 @@ span{
 
 
 .moblist{
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    display: none;
     width:max-content;
     height:max-content;
-    /* background-color: #1e522b; */
-    background-color:rgba(18, 32, 26);
-
-    position: absolute;
-    top: 3px;
-    right: 0px;
-    border: 3px solid rgb(0, 255, 21);
-    transition: right 0.7s;
-    display: none;
     padding-bottom: 20px;
+    transition: right 0.7s;
+    background-color:rgba(18, 32, 26);
+    border:2px solid rgb(97, 222, 231);
+    box-shadow: 0 0 10px rgb(130, 201, 206),
+                        0 0 15px rgb(0, 0, 0), 
+                        0 0 20px rgb(3, 228, 33);
+    
 }
 .closelist{
     position: absolute;
@@ -465,14 +473,16 @@ span{
     border: none;
     cursor: pointer;
 }
-
+.closelist:hover{
+    transform: scale(1.089);
+}
 
 
 
 @media screen and (max-width:950px){
     .images img{
-        width: 400px;
-        height:400px;
+        width: 330px;
+        height:330px;
         margin: auto;
     }
         
@@ -480,8 +490,19 @@ span{
 
 @media screen and (max-width:780px){
     .images img{
-        width: 350px;
-        height: 350px;
+        width: 280px;
+        height: 280px;
+    }
+    .box{
+        margin: 100px 50px;
+    }
+    
+}
+
+@media screen and (max-width:660px){
+    .images img{
+        width: 250px;
+        height: 250px;
     }
     .box{
         margin: 100px 50px;
@@ -492,8 +513,8 @@ span{
 @media screen and (max-width:580px) {
    
     .images img{
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
     }
     .menubtn {
         display: block;
@@ -505,6 +526,6 @@ span{
 
 @media screen and (max-width:300px) {
    .details {
-       margin-left: 120px;
+       margin-left: 70px;
    }
 }

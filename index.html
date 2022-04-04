@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="Doc/DropList.css">
     <!-- <link rel="stylesheet" href="Doc/css.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="Img/13.jpg">
+    <link rel="icon" href="Img/logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,16 +25,24 @@
 
 <body>
 
-    <nav>
+    <nav id="navlist">
         <div class="name"
-            onclick="document.getElementById('closenow').style.left= '0px';document.getElementById('closenow').style.transition= 'left 0.3s';document.getElementById('closenow').style.display= 'block';">
+            onclick="showAccount();">
             <img src="Img/logo.png" alt="MyPortFolio.com" class="logo">
             <p>TR</p>
         </div>
 
         <ul id="nav">
             <li><a href="#"><i class="material-icons">home</i>Home</a></li>
-            <li><a href="#"><i class="material-icons">person</i>PortFolio</a></li>
+            <li id="portfolio"><a href="#"><i class="material-icons">person</i>PortFolio</a>
+                <ul>
+                    <li>Web Portfolio</li>
+                    <li>Python Portfolio</li>
+                    <li>C++ Portfolio</li>
+                    <li>C Portfolio</li>
+
+                </ul>
+            </li>
 
             <li><a href="#"><i class="material-icons">group</i>Students</a>
                 <ul>
@@ -77,7 +85,7 @@
     </nav>
 
     <div class="account" id="closenow">
-        <button class="closebtn" onclick="document.getElementById('closenow').style.left= '-300px'"><i
+        <button class="closebtn" onclick="closeaccount();"><i
                 class="material-icons">close</i></button>
         <div class="logo2">
             <img src="Img/logo.png" alt="MyPortFolio.com" class="logo">
@@ -110,8 +118,7 @@
     </div>
 
     <div class="moblist" id="mob">
-        <button class="closelist" onclick="CloseList()"><i
-            class="material-icons">close</i></button>
+        <button class="closelist" onclick="CloseList()"><i class="material-icons">close</i></button>
 
     </div>
 
@@ -125,8 +132,7 @@
                 <a download="Doc/HTML_CSS_JAVASCRIPT.rar" href="Doc/HTML_CSS_JAVASCRIPT.rar">Download CV</a>
 
                 <div class="welcome">
-                    <img src="Img/welcome.gif" border="0"
-                        alt="MyPortFolio.com">
+                    <img src="Img/welcome.gif" border="0" alt="MyPortFolio.com">
                 </div>
             </div>
 
