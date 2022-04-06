@@ -1,39 +1,138 @@
 *{
     margin: 0;
     padding: 0;
+
+}
+body{
+    /* background-color: #222222; */
+    background-color:rgba(34,34,34,255);
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
 }
 
-body{
-    background-color: rgb(51, 95, 91);
+ul{
+    color: rgb(168, 164, 164);
+    width: 100%;
+    text-align: center;
+
+}
+ul li{
+    display: inline-block;
+    margin: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+ul li span{
+    color: rgb(111, 116, 116);
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p{
+    color: rgb(214, 210, 210);
+    font-size: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+p span{
+    color: white;
+    font-size: 33px;
+}
+
+.zip_file{
+    color: lime;
+    border: 2px solid lime;
+    padding: 5px 15px;
+    width: max-content;
+    text-decoration: none;
+    font-size: 12px;
+    word-spacing: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.message{
+    color: rgb(159, 160, 161);
+    font-size: 20px;
+
 }
 
 .main_box{
-    width: 450px;
-    height: 450px;
-    border: 2px solid red;
+    width: max-content;
+    height: max-content;
+    background-color:#333131 ;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px 20px;
+    box-shadow: 0 0 5px #202020,0 0 5px #000000,0 0 5px #3a3a3b,0 0 5px #46474b ;
+    display: flex;
+    align-items: center;
+    flex: wrap;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.main_box div{
+    width: max-content;
+    height: max-content;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    position:absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
+    align-items: center;
+    background-color: transparent;
+    
+}
+.main_box div button{
+    background-color: transparent;
+    border: none;
 }
 
-.main_box button{
-    /* width: 150px; */
-    /* height: 25px; */
-    height: fit-content;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(55, 103, 145);
+.material-icons.devices{
+    color: rgb(153, 153, 153);
+    font-size: 150px;
+}
+
+.material-icons.download{
+    color: lime;
+    font-size:50px;
+    border: 5px solid lime;
+    width:50px;
+    border-radius: 50%;
+}
+h3{
+    color: rgb(240, 229, 229);
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.main_box p{
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.download_zip{
+    background-color: #00c752;
+    text-decoration: none;
     color: white;
-    cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
+    
+    margin-top: 60px;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
 }
 
-iframe{
-    width: 750px;
-    height: 550px;
-    /* border: 2px solid red; */
+.main_box .top_message{
+    text-align:left;
 }
